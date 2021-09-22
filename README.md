@@ -9,6 +9,9 @@ Usage:
 
 ```html
 <script src = 'ready-1.2.8.js'></script>
+```
+
+```html
 <script>
 DOMContentLoaded(function(e) {
   // your code here
