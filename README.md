@@ -5,7 +5,7 @@ Works similar to jQuery's `$(document).ready()` or `$(function(){})`, but with n
 
 Can be placed in the `<head>` or the `<body>`, although for obvious reasons it should be placed in the `<head>` before other scripts are run, although everything will still work properly if the document has already loaded.
 
-Supports multiple loading instances and will not overwrite previous `onload` and `ready` event handlers.
+Supports multiple execution contexts and will not overwrite previous `onload` and `ready` event handlers.
 
 Works in `IE6+`, Edge, Chrome 1+, Firefox 1+, Opera 4+, Safari 3.2+, Safari iOS, Samsung Internet, with a fallback to window.onload that works everywhere. And it likely works, although as yet it is impossible and impractical to test, in even earlier browsers. Tested via BrowserStack.
 
@@ -20,8 +20,8 @@ Usage:
 DOMContentLoaded(function(e) { 
   // e.readyTime, e.funcExecuteTime, e.currentFunction
   // your code here  
-}, function(e) {
-  // separate execution context (optional)  
+}, function(e) { // optional
+  // separate execution context
 });
 </script>
 
