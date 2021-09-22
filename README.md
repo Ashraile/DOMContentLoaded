@@ -5,7 +5,7 @@ Can be placed in the `<head>` or the `<body>`, although for obvious reasons it s
 
 Usage:
 
-```javascript
+```
 
 <script>
 DOMContentLoaded(function(e) {
