@@ -19,7 +19,7 @@ function DOMContentLoaded() {
        The events fire within a few tenths of a second, and reported correctly in every
        browser that was tested, including IE6. But IE6 to 10 did not correctly return the other
        readyState values as per the spec:
-       In IE6-10, readyState was sometimes 'interactive', even when the DOM wasn't acce	ssible,
+       In IE6-10, readyState was sometimes 'interactive', even when the DOM wasn't accessible,
        so it's safe to assume that listening to the `onreadystatechange` event
        in legacy browsers is unstable. Should readyState be undefined, accessing undefined properties
        otf a defined object (document) will not throw.
