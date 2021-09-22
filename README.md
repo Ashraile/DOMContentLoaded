@@ -1,5 +1,5 @@
 # DOMContentLoaded
-An extremely useful global function that runs your Javascript code as soon as the DOM (Document Object Model) is ready to be manipulated.
+An extremely useful global function that runs your `JavaScript` code as soon as the DOM (Document Object Model) is ready to be manipulated.
 
 Works similar to jQuery's `$(document).ready()` or `$(function(){})`, but with no third-party dependencies, boilerplate framework architectures, or external variables. This is undisputably better than the jQuery version, as jQuery tests for `onreadystatechange` in browsers that will not always report it correctly. jQuery also does not return an `event` object for when the DOM loads.
 
