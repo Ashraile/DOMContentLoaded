@@ -25,7 +25,7 @@ Usage:
 <script>
 DOMContentLoaded(function(e) { 
     // your code here
-    // console.log(e); 
-}); /* , function(e){} // optional separate execution context */
+    // console.log(e) 
+} /* , function(e){} */);
 </script>
 ```
