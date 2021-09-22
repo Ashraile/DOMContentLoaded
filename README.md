@@ -13,7 +13,7 @@ The returned `event` object has 3 properties:
 
 Supports multiple execution contexts and will preserve previous `onload` and `ready` event handlers written by other scripts.
 
-Works in `IE6+`, Edge, Chrome 1+, Firefox 1+, Opera 4+, Safari 3.2+, Safari iOS, Samsung Internet, with a fallback to a window.onload stack that works everywhere. And it likely works, although as yet it is impossible and impractical to test, in even earlier browsers. Tested via BrowserStack.
+Works in `IE6+`, Edge, Chrome 1+, Firefox 1+, Opera 4+, Safari 3.2+, Safari iOS, Samsung Internet, with a fallback to a queued window.onload that works everywhere. And it likely works, although as yet it is basically impossible and impractical to test, in even earlier browsers. Tested via BrowserStack.
 
 Usage:
 
