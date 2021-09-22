@@ -7,9 +7,11 @@ Usage:
 
 ```javascript
 
+<script>
 DOMContentLoaded(function(e) {
   // your code here
 });
+</script>
 
 
 ```
