@@ -18,8 +18,9 @@ Usage:
 ```html
 <script>
 DOMContentLoaded(function(e) { 
-  // console.log(e);
+  // console.log(e); /// {readyTime: 1632298065437, funcExecuteTime: 1632298065438, currentFunction: f}
   // your code here  
+  
 }, function(e) {
   // separate execution context (optional)
 });
