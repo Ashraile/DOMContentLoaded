@@ -23,11 +23,9 @@ Usage:
 
 ```html
 <script>
-DOMContentLoaded(function(e) { 
-  // console.log(e)
-  // your code here  
-}, function(e) {
-  // separate execution context (optional)
-});
+    DOMContentLoaded( function(e) { 
+      // console.log(e); your code here  
+    } /* , function(e) {} // optional separate execution context */
+    );
 </script>
 ```
