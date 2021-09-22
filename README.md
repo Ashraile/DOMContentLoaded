@@ -1,15 +1,15 @@
 # DOMContentLoaded
 An extremely useful global function that runs your JavaScript code as soon as the DOM (Document Object Model) is ready to be manipulated.
 
+Can be placed in the `<head>` or the `<body>`, although for obvious reasons it should be placed in the `<head>` before other scripts are run, although everything will still work fine if the document has already loaded. 
+
 Works similar to jQuery's `$(document).ready()` or `$(function(){})`, but with no third-party dependencies, boilerplate framework architectures, or external variables. This is undisputably better than the jQuery version, as jQuery tests for `onreadystatechange` in browsers that will not always report it correctly. jQuery also does not return an `event` object for when the DOM loads.
 
 The returned `event` object has 3 properties:
 
-* `readyTime`: The time the DOM was registered as ready, in milliseconds since the Unix Epoch.
-* `funcExecuteTime`: The time your function executed, in milliseconds since the Unix Epoch
-* `currentFunction`: The current function that is being executed.
-
-Can be placed in the `<head>` or the `<body>`, although for obvious reasons it should be placed in the `<head>` before other scripts are run, although everything will still work properly if the document has already loaded. If the document has already loaded, `e.readyTime` will be `null`.
+* `readyTime`: The time in Unix Epoch milliseconds that the DOM was found ready. If the document is already loaded, `readyTime` will be `null` instead of a number.
+* `funcExecuteTime`: The time at which your function was executed.
+* `currentFunction`: A reference to the current function that is being run.
 
 Supports multiple execution contexts and will preserve previous `onload` and `ready` event handlers.
 
@@ -24,12 +24,10 @@ Usage:
 ```html
 <script>
 DOMContentLoaded(function(e) { 
-  // console.log(e); // -> {readyTime: 1632298065437, funcExecuteTime: 1632298065438, currentFunction: f}
+  // console.log(e)
   // your code here  
-  
 }, function(e) {
   // separate execution context (optional)
 });
 </script>
-
 ```
