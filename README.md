@@ -11,7 +11,7 @@ The returned `event` object has 3 properties:
 * `funcExecuteTime`: The time at which your function was executed.
 * `currentFunction`: A reference to the current function that is being run.
 
-Supports multiple execution contexts and will preserve previous `onload` and `ready` event handlers.
+Supports multiple execution contexts and will preserve previous `onload` and `ready` event handlers written by other scripts.
 
 Works in `IE6+`, Edge, Chrome 1+, Firefox 1+, Opera 4+, Safari 3.2+, Safari iOS, Samsung Internet, with a fallback to window.onload that works everywhere. And it likely works, although as yet it is impossible and impractical to test, in even earlier browsers. Tested via BrowserStack.
 
