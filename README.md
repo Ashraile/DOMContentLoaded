@@ -23,10 +23,10 @@ Usage:
 
 ```html
 <script>
-    DOMContentLoaded(function(e) { 
-      // your code here
-      // console.log(e); 
-    } /* , function(e){} // optional separate execution context */
-    );
+DOMContentLoaded(function(e) { 
+    // your code here
+    // console.log(e); 
+} /* , function(e){} // optional separate execution context */
+);
 </script>
 ```
