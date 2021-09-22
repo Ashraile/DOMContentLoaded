@@ -18,10 +18,10 @@ Usage:
 ```html
 <script>
 DOMContentLoaded(function(e) { 
-  // e.readyTime, e.funcExecuteTime, e.currentFunction
+  // { e.readyTime, e.funcExecuteTime, e.currentFunction }
   // your code here  
-}, function(e) { // optional
-  // separate execution context
+}, function(e) {
+  // separate execution context (optional)
 });
 </script>
 
