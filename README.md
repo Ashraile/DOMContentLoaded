@@ -23,9 +23,9 @@ Usage:
 
 ```html
 <script>
-    DOMContentLoaded( function(e) { 
+    DOMContentLoaded(function(e) { 
       // console.log(e); your code here  
-    } /* , function(e) {} // optional separate execution context */
+    } /* , function(e){} // optional separate execution context */
     );
 </script>
 ```
