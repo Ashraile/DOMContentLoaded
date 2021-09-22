@@ -5,13 +5,11 @@ Can be placed in the `<head>` or the `<body>`, although for obvious reasons it s
 
 Usage:
 
-```
-
+```html
 <script>
 DOMContentLoaded(function(e) {
   // your code here
 });
 </script>
-
 
 ```
