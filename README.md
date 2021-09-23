@@ -25,7 +25,7 @@ Usage:
 
 ```html
 <script>
-DOMContentLoaded(function(e) { // console.log(e) 
+DOMContentLoaded(function(e) { // console.log(e, this) 
     // your code here
 }/* , function(e) {}, ... */);
 </script>
